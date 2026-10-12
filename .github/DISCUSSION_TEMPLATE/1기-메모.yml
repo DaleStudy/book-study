@@ -1,0 +1,45 @@
+title: "[N주차] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        이번 주 범위에서 함께 이야기해보고 싶은 내용을 적어주세요.
+        제목은 `[N주차] 메모 주제` 형식으로 적어주세요. (예: `[1주차] 응답 시간은 평균 말고 백분위로 봐야 한다`)
+        마감은 토요일 23:59 KST이며, 분량은 자유입니다.
+  - type: dropdown
+    id: week
+    attributes:
+      label: 주차
+      options:
+        - 1주차 (1~2장)
+        - 2주차 (3~4장)
+        - 3주차 (5~6장)
+        - 4주차 (7장)
+        - 5주차 (8~9장)
+        - 6주차 (10장)
+        - 7주차 (11장)
+        - 8주차 (12장)
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 어떤 이야기인가요?
+      options:
+        - 흥미롭게 읽은 부분
+        - 깊이 파본 부분
+        - 실무와 연결되는 부분
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: 책의 어느 부분인가요?
+      placeholder: "예: 1장 '부하 기술하기' 절, 18쪽"
+  - type: textarea
+    id: content
+    attributes:
+      label: 내용
+      description: 다른 분들이 어떤 이야기인지 알 수 있을 정도면 충분해요. 같이 이야기해보고 싶은 질문을 덧붙여도 좋아요.
+    validations:
+      required: true
